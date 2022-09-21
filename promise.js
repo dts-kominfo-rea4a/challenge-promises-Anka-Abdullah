@@ -13,7 +13,9 @@ const promiseOutput = async (emotion) => {
       if (e.hasil === emotion) count += 1;
     });
     return count;
-  } catch (error) {}
+  } catch (error) {
+    return error
+  }
 };
 
 module.exports = {
